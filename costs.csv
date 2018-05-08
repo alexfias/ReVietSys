@@ -1,0 +1,16 @@
+carrier,marginal,capital
+H2,0.0,1
+battery,0.0,1
+bioenergy,22.0,3.75
+hard coal,10.6,3.75
+hydro,0.0,1
+lignite,6.21,3.75
+natural gas,26.45,3.75
+nuclear,3.0,10
+offshore,0.015,3.192338
+oil,45.82,
+onshore,0.015,2.961083
+other,41.76,
+ror,0.0,1
+solar,0.01,2
+waste,0.0,3
