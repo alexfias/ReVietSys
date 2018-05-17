@@ -11,7 +11,6 @@ network.loads_t.p_set = network.loads_t.p_set*2.23
 
 
 
-
 def my_extra_functionality(network,snapshots): 
 	from pyomo.core.base.expr import identify_variables
 

@@ -25,25 +25,36 @@ n.loads_t.p_set = (pd.concat([loads.rename(index = lambda ds : ds - pd.Timedelta
                                  for i in [0,1,2]])
                               [lambda df : ~df.index.duplicated()].reindex(n.snapshots))
 
+storages = pd.read_csv('/home/fabian/vres/py/ReVietSys/storage_units.csv', index_col=0)
+
 
 #drop generators
 n.mremove('Generator', n.generators.index)
 n.buses['substation_lv'] = True # assume all buses are substations
 
- 
-
 #add generators from pm 
 pm.config.set_target_countries('Vietnam')
-ppl = pm.data.WRI(filter_other_dbs=False) #could also match with pm.data.CARMA()
-ppl.Fueltype.replace({'Natural Gas': 'OCGT', 'Hydro':'ror'}, inplace=True, regex=True)
+ppl = (pm.data.WRI(filter_other_dbs=False) #could also match with pm.data.CARMA()
+        .replace({'Fueltype': {'Natural Gas': 'OCGT', 'Hydro': 'hydro'}}))
+ppl.loc[ppl.Fueltype=='hydro', 'Set'] = 'Store'
+
 pm.export.to_pypsa_network(ppl, n)
+
 n.generators = n.generators.assign(p_nom_min = n.generators.p_nom)
-#add artificial solar and wind
-for carrier in ['wind', 'solar', 'ror']:
+n.storage_units = (n.storage_units.assign(max_hours = 
+                                         storages.max_hours.reindex(n.storage_units.index).fillna(0))
+                                 .assign(p_nom_min = n.storage_units.p_nom))
+
+#add artificial generators for vres 
+for carrier in ['wind', 'solar']:
     not_included = ((n.buses.index).difference(
                         n.generators[n.generators.carrier == carrier].set_index('bus').index) )
     n.madd('Generator', names = not_included + ' ' + carrier,
                         bus = not_included, carrier=carrier) 
+not_included = ((n.buses.index).difference(
+                    n.storage_units[n.storage_units.carrier == 'hydro'].set_index('bus').index) )
+n.madd('StorageUnit', names = not_included + ' ' + 'hydro',
+                    bus = not_included, carrier='hydro') 
 
 
 vietshape = vshapes.countries(subset=['VN'])['VN']
@@ -51,52 +62,66 @@ onshore_locs = n.buses.loc[:, ["x", "y"]]
 regions = gpd.GeoDataFrame({
         'geometry': voronoi_partition_pts(onshore_locs.values, vietshape),
         'country': 'VN'}, index=onshore_locs.index).rename_axis('bus')
+regions.crs = {'init': u'epsg:4326'}
+regions['Area'] = regions.geometry.to_crs({'init': 'epsg:3395'}).map(lambda p: p.area / 10**6)
 
 
-#%% add layout for ror
+#%% add cutout
+    
+#TODO recalculate cutout
 cutout = atlite.Cutout("vietnam-2015-2016-era5", 
                        module='era5', 
                        bounds=[101,8, 110, 24],
                        years=slice(2015,2016, None))
 
-meta = ( cutout.meta.drop(['height', 'time', 'year-month', 'lat', 'lon'])
-                 .to_dataframe().reset_index() )
-
-kdtree = KDTree(meta[['x','y']].values)
-#assume all hydro are rors
-ror = ppl[ppl.Fueltype.isin(['ror'])] 
-ror_grouped = (ror.assign(
-                cell = meta.index[kdtree.query(ror[['lon','lat']].values)[1]])
-                             .groupby(['Fueltype','cell']).Capacity.sum() )
-
-ror_layout = (pd.concat([meta, ror_grouped.unstack(0)], axis=1)
-          .set_index(['x','y'])
-          .fillna(0).to_xarray().transpose())['ror']
-
-#%% add solar, wind
-
 cells = gpd.GeoDataFrame({'geometry' : cutout.grid_cells()})
 cells.crs = {'init': u'epsg:4326'}
 cells['Area'] = cells.geometry.to_crs({'init': 'epsg:3395'}).map(lambda p: p.area / 10**6)
 
+meta = ( cutout.meta.drop(['height', 'time', 'year-month', 'lat', 'lon'])
+                 .to_dataframe().reset_index() )
+
+indicatormatrix = cutout.indicatormatrix(regions.geometry)
+
+#%% add layouts
 
 def custum_layout(meta, cap_per_sq_km):
     return meta.assign(caps = cells.Area * cap_per_sq_km).set_index(['x','y']) \
                 .fillna(0).to_xarray().transpose().caps
 
-indicatormatrix = cutout.indicatormatrix(regions.geometry)
+#hydro
+kdtree = KDTree(meta[['x','y']].values)
+hydro = ppl[ppl.Fueltype.isin(['hydro'])] 
+hydro_grouped = (hydro.assign(
+                cell = meta.index[kdtree.query(hydro[['lon','lat']].values)[1]])
+                             .groupby(['Fueltype','cell']).Capacity.sum() )
 
-#add ror layout as custom layout ? 
+#fill p_nom_max density for unbuilt capacities
+#alternative could be 25% quantile of cell density 
+hydro_missing_cap = ((n.storage_units.groupby(['carrier', 'bus']).p_nom.sum()['hydro'] / regions.Area)
+                        [lambda ds:ds != 0].min())
+
+#expand upper bound for existing capacities by 15% 
+hydro_layout = (pd.concat([meta, hydro_grouped.unstack(0)], axis=1)
+          .set_index(['x','y']).mul(1.15) 
+          .fillna(hydro_missing_cap).to_xarray().transpose())
+
+#%% calaculate profile via atlite
+
 method = {'wind':'wind', 
           'solar':'pv', 
-          'ror':'runoff'}
+          'hydro':'runoff'}
 
 resource = {'wind' : {'turbine': 'Vestas_V112_3MW',
-                         'layout': custum_layout(meta, 10)
+                         'layout': custum_layout(meta, 10),
+                         'per_unit':True, 'smooth':True
                          }, 
             'solar' : {'panel': 'CSi', 'orientation': 'latitude_optimal',
-                       'layout' : custum_layout(meta, 170)},
-            'ror' : {'layout': ror_layout} }
+                       'layout' : custum_layout(meta, 170), 
+                       'per_unit':True},
+            'hydro' : {'layout': custum_layout(meta, hydro_missing_cap), 
+                     'per_unit':False,
+                     'smooth':True} }
 
 
 for carrier in method.keys():
@@ -104,28 +129,25 @@ for carrier in method.keys():
 
     func = getattr(cutout, method[carrier])
     profile, capacities = func(matrix=indicatormatrix, index=regions.index,
-                           per_unit=True,
                            return_capacity=True, **resource[carrier])
         
-        
     profile = (profile.to_pandas().T.rename(columns=lambda x: x + ' ' + carrier))
-
-    if carrier=='ror':
-#        assume ror generation statistics 
-#        from https://www.hydropower.org/country-profiles/vietnam
-        stats = pd.Series([52., 52.], index=[2015, 2016]) * 1e6
-        gen_per_year = (profile.groupby(pd.Grouper(freq='y')).sum() * 
-                         capacities.to_series().rename(index= lambda x : x + ' ' + carrier)
-                        ).sum(1).rename(index=lambda x : x.year)
-        scale_factor = (1/ gen_per_year * stats)
-        profile = profile.mul(pd.Series(n.snapshots.year, 
-                                        index=n.snapshots
-                                        ).map(scale_factor), axis=0)
-        capacities *= 1.3
     capacities = capacities.to_series().rename(index = lambda ds: ds + ' ' + carrier) 
+
+    if carrier=='hydro':
+#        assume hydro generation statistics 
+#        from https://www.hydropower.org/country-profiles/vietnam
         
-    n.generators.loc[capacities.index, 'p_nom_max'] = capacities
-    n.generators_t.p_max_pu =  pd.concat( [n.generators_t.p_max_pu , profile], axis=1)
+        capacities = n.storage_units.p_nom_min.where( n.storage_units.p_nom_min > 0, capacities)
+        inflow = profile * capacities
+        #assume about 10% will be spillage
+        inflow *= (120*1e6)/inflow.sum().reindex((n.storage_units.p_nom_min>0).index).sum() 
+        n.storage_units_t.inflow = inflow
+        n.storage_units.p_nom_max = capacities * 1.1  
+
+    else:       
+        n.generators.loc[capacities.index, 'p_nom_max'] = capacities
+        n.generators_t.p_max_pu =  pd.concat( [n.generators_t.p_max_pu , profile], axis=1)
         
 
 
