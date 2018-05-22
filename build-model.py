@@ -18,12 +18,20 @@ import numpy as np
 import geopandas as gpd
 
 n = pypsa.Network('original-model_original-data')
+
 #tranfer loads 
+#rescale loads to approx value of https://en.wikipedia.org/wiki/Energy_in_Vietnam 2015
+n.loads_t.p_set /= n.loads_t.p_set.sum().sum() * 133.4 * 1e6 * 1.25
 loads = n.loads_t.p_set.fillna(0).copy()
 n.set_snapshots(pd.DatetimeIndex(start='2015', end='2017', closed='left', freq='h'))
 n.loads_t.p_set = (pd.concat([loads.rename(index = lambda ds : ds - pd.Timedelta(270 - i * 52,'W'))
                                  for i in [0,1,2]])
                               [lambda df : ~df.index.duplicated()].reindex(n.snapshots))
+
+n.lines['type'] = '490-AL1/64-ST1A 380.0'
+n.lines['s_nom_min'] = (np.sqrt(3) * n.lines['type'].map(n.line_types.i_nom) *
+                   n.lines.bus0.map(n.buses.v_nom) * n.lines.num_parallel)
+
 
 storages = pd.read_csv('/home/fabian/vres/py/ReVietSys/storage_units.csv', index_col=0)
 
@@ -39,22 +47,26 @@ ppl = (pm.data.WRI(filter_other_dbs=False) #could also match with pm.data.CARMA(
 ppl.loc[ppl.Fueltype=='hydro', 'Set'] = 'Store'
 
 pm.export.to_pypsa_network(ppl, n)
+n.generators = n.generators.assign(p_nom_min = n.generators.p_nom).assign(p_nom_extendable = True)
 
-n.generators = n.generators.assign(p_nom_min = n.generators.p_nom)
 n.storage_units = (n.storage_units.assign(max_hours = 
                                          storages.max_hours.reindex(n.storage_units.index).fillna(0))
-                                 .assign(p_nom_min = n.storage_units.p_nom))
+                                 .assign(p_nom_min = n.storage_units.p_nom)
+                                 .assign(p_nom_extendable = True))
 
 #add artificial generators for vres 
 for carrier in ['wind', 'solar']:
     not_included = ((n.buses.index).difference(
                         n.generators[n.generators.carrier == carrier].set_index('bus').index) )
     n.madd('Generator', names = not_included + ' ' + carrier,
-                        bus = not_included, carrier=carrier) 
+                        bus = not_included, carrier=carrier, 
+                        p_nom_extendable = True) 
+
 not_included = ((n.buses.index).difference(
                     n.storage_units[n.storage_units.carrier == 'hydro'].set_index('bus').index) )
 n.madd('StorageUnit', names = not_included + ' ' + 'hydro',
-                    bus = not_included, carrier='hydro') 
+                    bus = not_included, carrier='hydro',
+                    p_nom_extendable = True) 
 
 
 vietshape = vshapes.countries(subset=['VN'])['VN']
@@ -148,7 +160,6 @@ for carrier in method.keys():
     else:       
         n.generators.loc[capacities.index, 'p_nom_max'] = capacities
         n.generators_t.p_max_pu =  pd.concat( [n.generators_t.p_max_pu , profile], axis=1)
-        
 
 
 #add costs
@@ -156,12 +167,14 @@ costs = pd.read_csv('costs.csv', index_col=0)
 n.generators['marginal_cost'] = n.generators.carrier.map(costs.marginal)
 n.generators['capital_cost'] = n.generators.carrier.map(costs.capital)
 n.generators['weight'] = 1 
+n.storage_units['marginal_cost'] = n.storage_units.carrier.map(costs.marginal)
+n.storage_units['capital_cost'] = n.storage_units.carrier.map(costs.capital)
+n.lines.capital_cost =  n.lines.length
 
-#only assumptions, no resaerch done on this yet
+
+#only assumptions, no research done on this yet
 n.carriers.loc['bioenergy', 'co2_emissions'] = 0.2
 n.carriers.loc['hard coal', 'co2_emissions'] = 1.
-#n.carriers.loc['bioenergy', 'co2_emissions'] = 0.2
-#n.carriers.loc['bioenergy', 'co2_emissions'] = 0.2
-n.generators.p_nom_extendable = True
+n.carriers = n.carriers.rename(index= lambda ds: ds.lower()).rename(index= {'windon': 'wind'})
 
 n.export_to_netcdf('vietnam.nc')
