@@ -1,0 +1,4 @@
+scenario,cap_solar,cap_wind,cap_bioenergy,cap_hydro,cap_hard coal,cap_oil,cap_gas,cap_nuclear,total_capacities,increase_load,increase_generation,share_renewable
+2020,850,800,306,21600,26000,1065,9000,0,60000,1.787,1.826,0.07
+2025,4000,2000,559,24600,47600,1775,15000,0,96500,2.722,2.776,0.085
+2030,12000,6000,1407,27800,55300,2248,19000,4600,129500,3.965,3.996,0.1
