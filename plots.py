@@ -27,8 +27,8 @@ fig, ax = plt.subplots(1,1, figsize=(10,10))
 bus_scale = 4e4
 link_scale = 5e1
 
-colors = dict(zip(['ocgt','wind','hydro','solar', 'hard coal', 'oil', 'bioenergy'],
-                  ['blue','green','navy','yellow', 'brown', 'k', 'darkgreen']))
+colors = dict(zip(['ocgt','wind','hydro','solar', 'hard coal', 'oil', 'bioenergy', 'nuclear'],
+                  ['blue','green','navy','yellow', 'brown', 'blacl', 'darkgreen', 'lightgreen']))
 
 n.plot(bus_sizes=plotcapas/bus_scale, bus_colors=colors, ax=ax,
              line_widths={'Link':0.0, 'Line':plotlines/link_scale},
