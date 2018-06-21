@@ -45,7 +45,7 @@ n.buses['substation_lv'] = True # assume all buses are substations
 #add generators from pm 
 pm.config.set_target_countries('Vietnam')
 ppl = (pm.data.WRI(filter_other_dbs=False) #could also match with pm.data.CARMA()
-        .replace({'Fueltype': {'Gas': 'Ocgt'}}))
+        .replace({'Fueltype': {'Natural Gas': 'Ocgt'}}))
 ppl.loc[ppl.Fueltype=='Hydro', 'Set'] = 'Store'
 
 pm.export.to_pypsa_network(ppl, n)
@@ -57,7 +57,7 @@ n.storage_units = (n.storage_units.assign(max_hours =
                                  .assign(p_nom_extendable = True))
 
 #add artificial generators for vres 
-carriers = ['wind', 'solar', 'bioenergy', 'hard coal', 'oil', 'ocgt', 'nuclear']
+carriers = ['wind', 'solar', 'bioenergy', 'hard coal', 'oil', 'ocgt', 'nuclear', 'perpetuum']
 for carrier in carriers:
     not_included = ((n.buses.index).difference(
                         n.generators[n.generators.carrier == carrier].set_index('bus').index) )
@@ -177,8 +177,8 @@ n.lines.capital_cost =  n.lines.length
 
 #only assumptions, no research done on this yet
 n.carriers = n.carriers.rename(index= lambda ds: ds.lower()).rename(index= {'windon': 'wind'})
-co_2 = dict(zip(carriers, [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,]))
-short = dict(zip(carriers, ['W', 'S', 'B', 'C', 'O', 'G', 'N']))
+co_2 = dict(zip(carriers, [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]))
+short = dict(zip(carriers, ['W', 'S', 'B', 'C', 'O', 'G', 'N', 'P']))
 for carrier in carriers:
     n.carriers.loc[carrier, 'co2_emissions'] = co_2[carrier]
     n.carriers.loc[carrier, 'short_name'] = short[carrier]
