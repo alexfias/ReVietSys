@@ -1,0 +1,369 @@
+name,bus,capital_cost,carrier,component,marginal_cost,max_hours,p_nom,p_nom_extendable,p_nom_max,p_nom_min,weight,control,p_nom_opt
+CongThanh hard coal,CongThanh,3.75,hard coal,PP,10.6,,600.0,True,inf,600.0,1,Slack,864.626961597
+DiLinh wind,DiLinh,101.0,wind,PP,0.015,,30.0,True,101799.03629321685,30.0,1,PQ,30.0000000186
+DongAnh hard coal,DongAnh,3.75,hard coal,PP,10.6,,440.0,True,inf,440.0,1,PQ,1133.05847456
+DuyenHai hard coal,DuyenHai,3.75,hard coal,PP,10.6,,1866.0,True,inf,1866.0,1,PQ,1866.00000189
+HiepHoa hard coal,HiepHoa,3.75,hard coal,PP,10.6,,235.0,True,inf,235.0,1,PQ,725.840325454
+LongPhu wind,LongPhu,101.0,wind,PP,0.015,,99.0,True,101734.24451266843,99.0,1,PQ,99.0000000227
+MongDuong2 hard coal,MongDuong2,3.75,hard coal,PP,10.6,,2800.0,True,inf,2800.0,1,PQ,2800.00000231
+NhaBe ocgt,NhaBe,3.75,ocgt,PP,26.45,,1215.0,True,inf,1215.0,1,PQ,1215.19529601
+NhaBe oil,NhaBe,3.75,oil,PP,45.82,,654.0,True,inf,654.0,1,PQ,654.033748148
+NhoQuan hard coal,NhoQuan,3.75,hard coal,PP,10.6,,100.0,True,inf,100.0,1,PQ,853.963895814
+OMon bioenergy,OMon,3.75,bioenergy,PP,22.0,,10.0,True,inf,10.0,1,PQ,11.0227452786
+OMon ocgt,OMon,3.75,ocgt,PP,26.45,,2202.0,True,inf,2202.0,1,PQ,2202.20735012
+OMon oil,OMon,3.75,oil,PP,45.82,,185.0,True,inf,185.0,1,PQ,185.158098824
+PhoNoi hard coal,PhoNoi,3.75,hard coal,PP,10.6,,1040.0,True,inf,1040.0,1,PQ,1041.07988718
+PhuLam oil,PhuLam,3.75,oil,PP,45.82,,24.0,True,inf,24.0,1,PQ,24.1246189146
+PhuMy hard coal,PhuMy,3.75,hard coal,PP,10.6,,310.0,True,inf,310.0,1,PQ,1414.9066959
+PhuMy ocgt,PhuMy,3.75,ocgt,PP,26.45,,4317.0,True,inf,4317.0,1,PQ,4318.02185013
+Pleiku2 bioenergy,Pleiku2,3.75,bioenergy,PP,22.0,,12.0,True,inf,12.0,1,PQ,12.2061888008
+Pleiku2 wind,Pleiku2,101.0,wind,PP,0.015,,21.0,True,185943.58021450712,21.0,1,PQ,21.0000000627
+QuangNinh hard coal,QuangNinh,3.75,hard coal,PP,10.6,,1200.0,True,inf,1200.0,1,PQ,1200.38432861
+SongMay oil,SongMay,3.75,oil,PP,45.82,,13.0,True,inf,13.0,1,PQ,16.6096391129
+ThangLongT hard coal,ThangLongT,3.75,hard coal,PP,10.6,,2265.0,True,inf,2265.0,1,PQ,2265.21203844
+ThangLongT oil,ThangLongT,3.75,oil,PP,45.82,,39.0,True,inf,39.0,1,PQ,39.0320581581
+ThanhMy hard coal,ThanhMy,3.75,hard coal,PP,10.6,,30.0,True,inf,30.0,1,PQ,103.643720705
+VinhTan hard coal,VinhTan,3.75,hard coal,PP,10.6,,1244.0,True,inf,1244.0,1,PQ,1245.99549147
+VinhTan wind,VinhTan,101.0,wind,PP,0.015,,38.0,True,59690.69641274641,38.0,1,PQ,38.0000013234
+VungAng hard coal,VungAng,3.75,hard coal,PP,10.6,,1395.0,True,inf,1395.0,1,PQ,1395.20414295
+CauBong wind,CauBong,101.0,wind,,0.015,,0.0,True,4277.04502574644,0.0,1,PQ,2.05211557716e-06
+ChonThanh wind,ChonThanh,101.0,wind,,0.015,,0.0,True,78656.87945273863,0.0,1,PQ,2.56979655601e-06
+CongThanh wind,CongThanh,101.0,wind,,0.015,,0.0,True,14287.62472982555,0.0,1,PQ,3.13737711383e-06
+CuChi wind,CuChi,101.0,wind,,0.015,,0.0,True,37900.66357261033,0.0,1,PQ,2.11060448833e-06
+DaNang wind,DaNang,101.0,wind,,0.015,,0.0,True,58938.65720681843,0.0,1,PQ,2.85318352547e-06
+DakNong wind,DakNong,101.0,wind,,0.015,,0.0,True,146883.04987899945,0.0,1,PQ,3.50378448434e-06
+DocSoi wind,DocSoi,101.0,wind,,0.015,,0.0,True,102506.24660276974,0.0,1,PQ,2.89961587658e-06
+DongAnh wind,DongAnh,101.0,wind,,0.015,,0.0,True,9632.96026037187,0.0,1,PQ,2.23533526952e-06
+DucHoa wind,DucHoa,101.0,wind,,0.015,,0.0,True,17930.95596951591,0.0,1,PQ,2.08269972602e-06
+DuyenHai wind,DuyenHai,101.0,wind,,0.015,,0.0,True,14072.491291034326,0.0,1,PQ,2011.99989309
+HaTinh wind,HaTinh,101.0,wind,,0.015,,0.0,True,88196.40266806136,0.0,1,PQ,2.93239949084e-06
+HiepHoa wind,HiepHoa,101.0,wind,,0.015,,0.0,True,113429.83423953329,0.0,1,PQ,2.83685196219e-06
+HoaBinh wind,HoaBinh,101.0,wind,,0.015,,0.0,True,297848.9239008506,0.0,1,PQ,1.82515967555e-06
+LaiChau wind,LaiChau,101.0,wind,,0.015,,0.0,True,105277.51373423784,0.0,1,PQ,1.77002281621e-06
+LaiChauH wind,LaiChauH,101.0,wind,,0.015,,0.0,True,87305.59131884792,0.0,1,PQ,1.77797046795e-06
+LongThanh wind,LongThanh,101.0,wind,,0.015,,0.0,True,76156.95088295903,0.0,1,PQ,3.02291054325e-06
+MongDuong1 wind,MongDuong1,101.0,wind,,0.015,,0.0,True,16783.47658363214,0.0,1,PQ,2.88171951385e-06
+MongDuong2 wind,MongDuong2,101.0,wind,,0.015,,0.0,True,14710.92448979987,0.0,1,PQ,2.34447207254e-06
+MyTho wind,MyTho,101.0,wind,,0.015,,0.0,True,59213.96523312163,0.0,1,PQ,3.12911627775e-06
+NamDinh1 wind,NamDinh1,101.0,wind,,0.015,,0.0,True,36399.06110002248,0.0,1,PQ,3.37687399305e-06
+NghiSon wind,NghiSon,101.0,wind,,0.015,,0.0,True,190148.20834539854,0.0,1,PQ,1.88586426393e-06
+NhaBe wind,NhaBe,101.0,wind,,0.015,,0.0,True,12445.55627732549,0.0,1,PQ,2.83462644765e-06
+NhoQuan wind,NhoQuan,101.0,wind,,0.015,,0.0,True,115516.22310217722,0.0,1,PQ,1.97796506126e-06
+OMon wind,OMon,101.0,wind,,0.015,,0.0,True,192852.44025559246,0.0,1,PQ,2.76818120512e-06
+PhoNoi wind,PhoNoi,101.0,wind,,0.015,,0.0,True,51124.76129795122,0.0,1,PQ,2.91907343417e-06
+PhuLam wind,PhuLam,101.0,wind,,0.015,,0.0,True,9485.403505219048,0.0,1,PQ,2.16896624362e-06
+PhuMy wind,PhuMy,101.0,wind,,0.015,,0.0,True,19416.113371402476,0.0,1,PQ,4.08830250612e-06
+Pleiku wind,Pleiku,101.0,wind,,0.015,,0.0,True,62495.33767678233,0.0,1,PQ,3.50164695632e-06
+QuangNinh wind,QuangNinh,101.0,wind,,0.015,,0.0,True,17291.509787827228,0.0,1,PQ,2.92808247096e-06
+SonLa wind,SonLa,101.0,wind,,0.015,,0.0,True,136902.24369038967,0.0,1,PQ,1.76978189951e-06
+SonLaH wind,SonLaH,101.0,wind,,0.015,,0.0,True,141424.7338077294,0.0,1,PQ,1.82351046792e-06
+SongMay wind,SongMay,101.0,wind,,0.015,,0.0,True,21668.437937189345,0.0,1,PQ,2.05311945595e-06
+TanDinh wind,TanDinh,101.0,wind,,0.015,,0.0,True,6416.773347512985,0.0,1,PQ,2.0166751157e-06
+TanUyen wind,TanUyen,101.0,wind,,0.015,,0.0,True,6171.767520089916,0.0,1,PQ,2.03780007109e-06
+TayHaNoi wind,TayHaNoi,101.0,wind,,0.015,,0.0,True,56167.41671411779,0.0,1,PQ,1.85021775371e-06
+ThangLongT wind,ThangLongT,101.0,wind,,0.015,,0.0,True,60473.35956168175,0.0,1,PQ,2.96222525254e-06
+ThanhMy wind,ThanhMy,101.0,wind,,0.015,,0.0,True,147203.80001066413,0.0,1,PQ,2.17151247842e-06
+ThuongTin wind,ThuongTin,101.0,wind,,0.015,,0.0,True,19541.811933449095,0.0,1,PQ,2.72603674153e-06
+VanPhong wind,VanPhong,101.0,wind,,0.015,,0.0,True,163739.3855580205,0.0,1,PQ,3.48247360126e-06
+VietTri wind,VietTri,101.0,wind,,0.015,,0.0,True,84846.35901132453,0.0,1,PQ,1.79623859663e-06
+VungAng wind,VungAng,101.0,wind,,0.015,,0.0,True,100684.31143768331,0.0,1,PQ,3.45046270015e-06
+Yali wind,Yali,101.0,wind,,0.015,,0.0,True,85008.23096059059,0.0,1,PQ,2.92167556507e-06
+CauBong solar,CauBong,104.0,solar,,0.01,,0.0,True,72709.76543768948,0.0,1,PQ,2.27478635728e-05
+ChonThanh solar,ChonThanh,104.0,solar,,0.01,,0.0,True,1337166.950696557,0.0,1,PQ,8.91961148746e-05
+CongThanh solar,CongThanh,104.0,solar,,0.01,,0.0,True,242889.62040703435,0.0,1,PQ,2.96993581264e-06
+CuChi solar,CuChi,104.0,solar,,0.01,,0.0,True,644311.2807343755,0.0,1,PQ,7.41986384263e-05
+DaNang solar,DaNang,104.0,solar,,0.01,,0.0,True,1001957.1725159134,0.0,1,PQ,3.38050912274e-06
+DakNong solar,DakNong,104.0,solar,,0.01,,0.0,True,2497011.847942991,0.0,1,PQ,2.49523343443e-05
+DiLinh solar,DiLinh,104.0,solar,,0.01,,0.0,True,1730583.6169846866,0.0,1,PQ,3241.1465576
+DocSoi solar,DocSoi,104.0,solar,,0.01,,0.0,True,1742606.1922470857,0.0,1,PQ,3.95039128093e-06
+DongAnh solar,DongAnh,104.0,solar,,0.01,,0.0,True,163760.3244263218,0.0,1,PQ,2.5476634812e-06
+DucHoa solar,DucHoa,104.0,solar,,0.01,,0.0,True,304826.25148177054,0.0,1,PQ,1.79234714235e-05
+DuyenHai solar,DuyenHai,104.0,solar,,0.01,,0.0,True,239232.3519475836,0.0,1,PQ,2.03104106466e-05
+HaTinh solar,HaTinh,104.0,solar,,0.01,,0.0,True,1499338.845357043,0.0,1,PQ,3.39766683991e-06
+HiepHoa solar,HiepHoa,104.0,solar,,0.01,,0.0,True,1928307.182072066,0.0,1,PQ,2.63018733313e-06
+HoaBinh solar,HoaBinh,104.0,solar,,0.01,,0.0,True,5063431.706314459,0.0,1,PQ,2.47231236188e-06
+LaiChau solar,LaiChau,104.0,solar,,0.01,,0.0,True,1789717.733482043,0.0,1,PQ,3.09926828166e-06
+LaiChauH solar,LaiChauH,104.0,solar,,0.01,,0.0,True,1484195.0524204148,0.0,1,PQ,3.40715228465e-06
+LongPhu solar,LongPhu,104.0,solar,,0.01,,0.0,True,1729482.1567153628,0.0,1,PQ,8.33616038119e-06
+LongThanh solar,LongThanh,104.0,solar,,0.01,,0.0,True,1294668.165010304,0.0,1,PQ,4.23151144741e-05
+MongDuong1 solar,MongDuong1,104.0,solar,,0.01,,0.0,True,285319.10192174633,0.0,1,PQ,3.24766921382e-06
+MongDuong2 solar,MongDuong2,104.0,solar,,0.01,,0.0,True,250085.71632659785,0.0,1,PQ,3.33981676649e-06
+MyTho solar,MyTho,104.0,solar,,0.01,,0.0,True,1006637.4089630676,0.0,1,PQ,1.18901907046e-05
+NamDinh1 solar,NamDinh1,104.0,solar,,0.01,,0.0,True,618784.0387003821,0.0,1,PQ,3.00096823497e-06
+NghiSon solar,NghiSon,104.0,solar,,0.01,,0.0,True,3232519.541871776,0.0,1,PQ,3.12251275761e-06
+NhaBe solar,NhaBe,104.0,solar,,0.01,,0.0,True,211574.45671453336,0.0,1,PQ,2.17265666849e-05
+NhoQuan solar,NhoQuan,104.0,solar,,0.01,,0.0,True,1963775.7927370125,0.0,1,PQ,2.80170519612e-06
+OMon solar,OMon,104.0,solar,,0.01,,0.0,True,3278491.484345072,0.0,1,PQ,9.30217721417e-06
+PhoNoi solar,PhoNoi,104.0,solar,,0.01,,0.0,True,869120.9420651707,0.0,1,PQ,2.70929492889e-06
+PhuLam solar,PhuLam,104.0,solar,,0.01,,0.0,True,161251.8595887238,0.0,1,PQ,1.77940430764e-05
+PhuMy solar,PhuMy,104.0,solar,,0.01,,0.0,True,330073.92731384217,0.0,1,PQ,6.22497318094e-05
+Pleiku solar,Pleiku,104.0,solar,,0.01,,0.0,True,1062420.7405052995,0.0,1,PQ,6.24208631219e-06
+Pleiku2 solar,Pleiku2,104.0,solar,,0.01,,0.0,True,3161040.8636466204,0.0,1,PQ,6.53831949119e-06
+QuangNinh solar,QuangNinh,104.0,solar,,0.01,,0.0,True,293955.6663930629,0.0,1,PQ,3.13665260399e-06
+SonLa solar,SonLa,104.0,solar,,0.01,,0.0,True,2327338.142736625,0.0,1,PQ,2.83620646654e-06
+SonLaH solar,SonLaH,104.0,solar,,0.01,,0.0,True,2404220.4747314,0.0,1,PQ,3.5063448968e-06
+SongMay solar,SongMay,104.0,solar,,0.01,,0.0,True,368363.4449322189,0.0,1,PQ,2.16678502758e-05
+TanDinh solar,TanDinh,104.0,solar,,0.01,,0.0,True,109085.14690772074,0.0,1,PQ,2.53767831622e-05
+TanUyen solar,TanUyen,104.0,solar,,0.01,,0.0,True,104920.04784152858,0.0,1,PQ,2.29499744888e-05
+TayHaNoi solar,TayHaNoi,104.0,solar,,0.01,,0.0,True,954846.0841400023,0.0,1,PQ,2.64824140144e-06
+ThangLongT solar,ThangLongT,104.0,solar,,0.01,,0.0,True,1028047.1125485898,0.0,1,PQ,2.94372454574e-06
+ThanhMy solar,ThanhMy,104.0,solar,,0.01,,0.0,True,2502464.6001812904,0.0,1,PQ,3.7820077875e-06
+ThuongTin solar,ThuongTin,104.0,solar,,0.01,,0.0,True,332210.80286863464,0.0,1,PQ,2.58077530336e-06
+VanPhong solar,VanPhong,104.0,solar,,0.01,,0.0,True,2783569.5544863483,0.0,1,PQ,5.21400902676e-06
+VietTri solar,VietTri,104.0,solar,,0.01,,0.0,True,1442388.1031925168,0.0,1,PQ,2.68552564084e-06
+VinhTan solar,VinhTan,104.0,solar,,0.01,,0.0,True,1014741.839016689,0.0,1,PQ,1158.85284906
+VungAng solar,VungAng,104.0,solar,,0.01,,0.0,True,1711633.2944406164,0.0,1,PQ,3.43649400939e-06
+Yali solar,Yali,104.0,solar,,0.01,,0.0,True,1445139.9263300402,0.0,1,PQ,8.76526013699e-06
+CauBong bioenergy,CauBong,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061574294
+ChonThanh bioenergy,ChonThanh,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061565838
+CongThanh bioenergy,CongThanh,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061691097
+CuChi bioenergy,CuChi,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061583534
+DaNang bioenergy,DaNang,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061658479
+DakNong bioenergy,DakNong,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.90615788
+DiLinh bioenergy,DiLinh,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061577444
+DocSoi bioenergy,DocSoi,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061658094
+DongAnh bioenergy,DongAnh,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061722906
+DucHoa bioenergy,DucHoa,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061602108
+DuyenHai bioenergy,DuyenHai,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.906160849
+HaTinh bioenergy,HaTinh,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061664466
+HiepHoa bioenergy,HiepHoa,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061716543
+HoaBinh bioenergy,HoaBinh,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061726102
+LaiChau bioenergy,LaiChau,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061692839
+LaiChauH bioenergy,LaiChauH,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061694037
+LongPhu bioenergy,LongPhu,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061597338
+LongThanh bioenergy,LongThanh,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061637229
+MongDuong1 bioenergy,MongDuong1,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061694597
+MongDuong2 bioenergy,MongDuong2,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061702242
+MyTho bioenergy,MyTho,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061638746
+NamDinh1 bioenergy,NamDinh1,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061707085
+NghiSon bioenergy,NghiSon,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061687653
+NhaBe bioenergy,NhaBe,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.906162847
+NhoQuan bioenergy,NhoQuan,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061715763
+PhoNoi bioenergy,PhoNoi,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.906171109
+PhuLam bioenergy,PhuLam,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.906159919
+PhuMy bioenergy,PhuMy,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061636921
+Pleiku bioenergy,Pleiku,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061596376
+QuangNinh bioenergy,QuangNinh,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061706756
+SonLa bioenergy,SonLa,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061700496
+SonLaH bioenergy,SonLaH,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061700562
+SongMay bioenergy,SongMay,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061627788
+TanDinh bioenergy,TanDinh,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061610281
+TanUyen bioenergy,TanUyen,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061615272
+TayHaNoi bioenergy,TayHaNoi,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061719556
+ThangLongT bioenergy,ThangLongT,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061709842
+ThanhMy bioenergy,ThanhMy,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061637425
+ThuongTin bioenergy,ThuongTin,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061716039
+VanPhong bioenergy,VanPhong,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.906161145
+VietTri bioenergy,VietTri,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061716109
+VinhTan bioenergy,VinhTan,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061620461
+VungAng bioenergy,VungAng,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061666001
+Yali bioenergy,Yali,3.75,bioenergy,,22.0,,0.0,True,inf,0.0,1,PQ,10.9061605184
+CauBong hard coal,CauBong,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,2384.32819175
+ChonThanh hard coal,ChonThanh,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1047.15595104
+CuChi hard coal,CuChi,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1426.85743168
+DaNang hard coal,DaNang,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,889.12204295
+DakNong hard coal,DakNong,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,437.271904838
+DiLinh hard coal,DiLinh,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,91.8970985598
+DocSoi hard coal,DocSoi,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,418.617745408
+DucHoa hard coal,DucHoa,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1577.1989854
+HaTinh hard coal,HaTinh,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1414.6489338
+HoaBinh hard coal,HoaBinh,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,971.975684317
+LaiChau hard coal,LaiChau,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,731.869305752
+LaiChauH hard coal,LaiChauH,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,690.75842982
+LongPhu hard coal,LongPhu,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1000.27022515
+LongThanh hard coal,LongThanh,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1117.8028795
+MongDuong1 hard coal,MongDuong1,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,528.895287218
+MyTho hard coal,MyTho,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,833.269759861
+NamDinh1 hard coal,NamDinh1,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,631.526845933
+NghiSon hard coal,NghiSon,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1377.74413808
+NhaBe hard coal,NhaBe,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1681.33150396
+OMon hard coal,OMon,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,974.402495018
+PhuLam hard coal,PhuLam,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1866.99628858
+Pleiku hard coal,Pleiku,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,197.415245351
+Pleiku2 hard coal,Pleiku2,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,197.295066646
+SonLa hard coal,SonLa,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,713.521009333
+SonLaH hard coal,SonLaH,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,509.136604111
+SongMay hard coal,SongMay,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1254.50073273
+TanDinh hard coal,TanDinh,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1352.07530236
+TanUyen hard coal,TanUyen,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1262.65764075
+TayHaNoi hard coal,TayHaNoi,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1377.28119556
+ThuongTin hard coal,ThuongTin,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,981.268206095
+VanPhong hard coal,VanPhong,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,916.63325756
+VietTri hard coal,VietTri,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,1029.26327554
+Yali hard coal,Yali,3.75,hard coal,,10.6,,0.0,True,inf,0.0,1,PQ,198.681675625
+CauBong oil,CauBong,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497960592
+ChonThanh oil,ChonThanh,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497955756
+CongThanh oil,CongThanh,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498042337
+CuChi oil,CuChi,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.549796629
+DaNang oil,DaNang,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498013809
+DakNong oil,DakNong,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497948018
+DiLinh oil,DiLinh,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.549795187
+DocSoi oil,DocSoi,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498013085
+DongAnh oil,DongAnh,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498074715
+DucHoa oil,DucHoa,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497981328
+DuyenHai oil,DuyenHai,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497985334
+HaTinh oil,HaTinh,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498018185
+HiepHoa oil,HiepHoa,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498069259
+HoaBinh oil,HoaBinh,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498077545
+LaiChau oil,LaiChau,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498054689
+LaiChauH oil,LaiChauH,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498055756
+LongPhu oil,LongPhu,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497977585
+LongThanh oil,LongThanh,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498011088
+MongDuong1 oil,MongDuong1,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498048294
+MongDuong2 oil,MongDuong2,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498056335
+MyTho oil,MyTho,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498012421
+NamDinh1 oil,NamDinh1,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498045863
+NghiSon oil,NghiSon,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498043433
+NhoQuan oil,NhoQuan,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498068527
+PhoNoi oil,PhoNoi,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498064778
+PhuMy oil,PhuMy,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498009961
+Pleiku oil,Pleiku,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497963847
+Pleiku2 oil,Pleiku2,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497946482
+QuangNinh oil,QuangNinh,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498059661
+SonLa oil,SonLa,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498061088
+SonLaH oil,SonLaH,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498061236
+TanDinh oil,TanDinh,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497987687
+TanUyen oil,TanUyen,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.549799507
+TayHaNoi oil,TayHaNoi,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498071694
+ThanhMy oil,ThanhMy,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497994903
+ThuongTin oil,ThuongTin,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498068851
+VanPhong oil,VanPhong,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497991281
+VietTri oil,VietTri,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498068792
+VinhTan oil,VinhTan,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5497996935
+VungAng oil,VungAng,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.5498019372
+Yali oil,Yali,3.75,oil,,45.82,,0.0,True,inf,0.0,1,PQ,16.549796508
+CauBong ocgt,CauBong,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060110452
+ChonThanh ocgt,ChonThanh,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060092327
+CongThanh ocgt,CongThanh,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059733079
+CuChi ocgt,CuChi,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060076679
+DaNang ocgt,DaNang,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059855804
+DakNong ocgt,DakNong,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060048936
+DiLinh ocgt,DiLinh,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060074867
+DocSoi ocgt,DocSoi,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059872585
+DongAnh ocgt,DongAnh,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059756416
+DucHoa ocgt,DucHoa,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060091541
+DuyenHai ocgt,DuyenHai,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059976062
+HaTinh ocgt,HaTinh,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059788905
+HiepHoa ocgt,HiepHoa,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059748441
+HoaBinh ocgt,HoaBinh,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059750492
+LaiChau ocgt,LaiChau,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059726634
+LaiChauH ocgt,LaiChauH,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059729821
+LongPhu ocgt,LongPhu,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.06005198
+LongThanh ocgt,LongThanh,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060105995
+MongDuong1 ocgt,MongDuong1,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059701313
+MongDuong2 ocgt,MongDuong2,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.05973047
+MyTho ocgt,MyTho,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060106827
+NamDinh1 ocgt,NamDinh1,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.05968155
+NghiSon ocgt,NghiSon,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059749789
+NhoQuan ocgt,NhoQuan,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059748628
+PhoNoi ocgt,PhoNoi,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059753198
+PhuLam ocgt,PhuLam,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.06008679
+Pleiku ocgt,Pleiku,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.06000096
+Pleiku2 ocgt,Pleiku2,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060006168
+QuangNinh ocgt,QuangNinh,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059726825
+SonLa ocgt,SonLa,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059736805
+SonLaH ocgt,SonLaH,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059739618
+SongMay ocgt,SongMay,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060103568
+TanDinh ocgt,TanDinh,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060125515
+TanUyen ocgt,TanUyen,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.06013763
+TayHaNoi ocgt,TayHaNoi,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059724581
+ThangLongT ocgt,ThangLongT,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.05972746
+ThanhMy ocgt,ThanhMy,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059874957
+ThuongTin ocgt,ThuongTin,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059737696
+VanPhong ocgt,VanPhong,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060109269
+VietTri ocgt,VietTri,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059746266
+VinhTan ocgt,VinhTan,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.060139724
+VungAng ocgt,VungAng,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.05978053
+Yali ocgt,Yali,3.75,ocgt,,26.45,,0.0,True,inf,0.0,1,PQ,134.059950227
+CauBong nuclear,CauBong,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+ChonThanh nuclear,ChonThanh,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+CongThanh nuclear,CongThanh,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+CuChi nuclear,CuChi,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+DaNang nuclear,DaNang,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+DakNong nuclear,DakNong,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+DiLinh nuclear,DiLinh,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+DocSoi nuclear,DocSoi,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+DongAnh nuclear,DongAnh,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+DucHoa nuclear,DucHoa,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+DuyenHai nuclear,DuyenHai,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+HaTinh nuclear,HaTinh,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+HiepHoa nuclear,HiepHoa,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+HoaBinh nuclear,HoaBinh,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+LaiChau nuclear,LaiChau,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+LaiChauH nuclear,LaiChauH,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+LongPhu nuclear,LongPhu,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+LongThanh nuclear,LongThanh,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+MongDuong1 nuclear,MongDuong1,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+MongDuong2 nuclear,MongDuong2,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+MyTho nuclear,MyTho,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+NamDinh1 nuclear,NamDinh1,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+NghiSon nuclear,NghiSon,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+NhaBe nuclear,NhaBe,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+NhoQuan nuclear,NhoQuan,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+OMon nuclear,OMon,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+PhoNoi nuclear,PhoNoi,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+PhuLam nuclear,PhuLam,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+PhuMy nuclear,PhuMy,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+Pleiku nuclear,Pleiku,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+Pleiku2 nuclear,Pleiku2,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+QuangNinh nuclear,QuangNinh,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+SonLa nuclear,SonLa,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+SonLaH nuclear,SonLaH,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+SongMay nuclear,SongMay,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+TanDinh nuclear,TanDinh,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+TanUyen nuclear,TanUyen,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+TayHaNoi nuclear,TayHaNoi,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+ThangLongT nuclear,ThangLongT,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+ThanhMy nuclear,ThanhMy,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+ThuongTin nuclear,ThuongTin,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+VanPhong nuclear,VanPhong,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+VietTri nuclear,VietTri,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+VinhTan nuclear,VinhTan,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+VungAng nuclear,VungAng,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+Yali nuclear,Yali,10.0,nuclear,,3.0,,0.0,True,inf,0.0,1,PQ,0.0
+CauBong perpetuum,CauBong,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.2585742178e-09
+ChonThanh perpetuum,ChonThanh,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25857355262e-09
+CongThanh perpetuum,CongThanh,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859459607e-09
+CuChi perpetuum,CuChi,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25857476291e-09
+DaNang perpetuum,DaNang,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858853906e-09
+DakNong perpetuum,DakNong,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859866886e-09
+DiLinh perpetuum,DiLinh,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25857904671e-09
+DocSoi perpetuum,DocSoi,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859619579e-09
+DongAnh perpetuum,DongAnh,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25857409181e-09
+DucHoa perpetuum,DucHoa,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25857439658e-09
+DuyenHai perpetuum,DuyenHai,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859585914e-09
+HaTinh perpetuum,HaTinh,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858434677e-09
+HiepHoa perpetuum,HiepHoa,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858652204e-09
+HoaBinh perpetuum,HoaBinh,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858437694e-09
+LaiChau perpetuum,LaiChau,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.2585873324e-09
+LaiChauH perpetuum,LaiChauH,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.258588086e-09
+LongPhu perpetuum,LongPhu,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859599996e-09
+LongThanh perpetuum,LongThanh,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859214396e-09
+MongDuong1 perpetuum,MongDuong1,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859127344e-09
+MongDuong2 perpetuum,MongDuong2,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25857622697e-09
+MyTho perpetuum,MyTho,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.258583527e-09
+NamDinh1 perpetuum,NamDinh1,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859544799e-09
+NghiSon perpetuum,NghiSon,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.258584429e-09
+NhaBe perpetuum,NhaBe,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858888501e-09
+NhoQuan perpetuum,NhoQuan,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858843517e-09
+OMon perpetuum,OMon,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.258576949e-09
+PhoNoi perpetuum,PhoNoi,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859056737e-09
+PhuLam perpetuum,PhuLam,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25856763568e-09
+PhuMy perpetuum,PhuMy,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859755316e-09
+Pleiku perpetuum,Pleiku,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859616761e-09
+Pleiku2 perpetuum,Pleiku2,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25860127979e-09
+QuangNinh perpetuum,QuangNinh,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859130596e-09
+SonLa perpetuum,SonLa,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858774682e-09
+SonLaH perpetuum,SonLaH,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859072202e-09
+SongMay perpetuum,SongMay,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858590977e-09
+TanDinh perpetuum,TanDinh,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25857972514e-09
+TanUyen perpetuum,TanUyen,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25857696781e-09
+TayHaNoi perpetuum,TayHaNoi,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858400307e-09
+ThangLongT perpetuum,ThangLongT,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859477161e-09
+ThanhMy perpetuum,ThanhMy,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858605563e-09
+ThuongTin perpetuum,ThuongTin,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858312728e-09
+VanPhong perpetuum,VanPhong,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859261547e-09
+VietTri perpetuum,VietTri,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25858302846e-09
+VinhTan perpetuum,VinhTan,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25857907118e-09
+VungAng perpetuum,VungAng,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859368556e-09
+Yali perpetuum,Yali,1000000.0,perpetuum,,1000000.0,,0.0,True,inf,0.0,1,PQ,4.25859571918e-09
