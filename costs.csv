@@ -1,14 +1,14 @@
-carrier,marginal,capital
+carrier,marginal,capital,co2_emissions
 H2,0,1
 battery,0,1
 bioenergy,72.9,256.
-hard coal,30.,222.0
+hard coal,30.,222.0,427.7
 hydro,5.0,211.2
 lignite,6.21,3.75
-ocgt,76.8,63.8
+ocgt,76.8,63.8,230.0
 nuclear,10.4,455.1
 offshore,0.015,3.192338
-oil,91.6,255.3
+oil,91.6,255.3,405.0
 wind,0.015,140.4
 other,41.76,102
 ror,0,103
