@@ -1,17 +1,17 @@
 carrier,marginal,capital
 H2,0,1
 battery,0,1
-bioenergy,22,3.75
-hard coal,10.6,3.75
-hydro,0.1,2
+bioenergy,72.9,256.
+hard coal,30.,222.0
+hydro,5.0,211.2
 lignite,6.21,3.75
-ocgt,26.45,3.75
-nuclear,3,10
+ocgt,76.8,63.8
+nuclear,10.4,455.1
 offshore,0.015,3.192338
-oil,45.82,3.75
-wind,0.015,101
+oil,91.6,255.3
+wind,0.015,140.4
 other,41.76,102
 ror,0,103
-solar,0.01,104
+solar,0.01,65.92
 waste,0,105
 perpetuum,1000000,1000000
