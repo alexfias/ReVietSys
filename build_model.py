@@ -82,11 +82,9 @@ regions['Area'] = regions.geometry.to_crs({'init': 'epsg:3395'}).map(lambda p: p
 
 
 #%% add cutout
-    
-#TODO recalculate cutout
 cutout = atlite.Cutout("vietnam-2015-2016-era5", 
                        module='era5', 
-                       bounds=[101,8, 110, 24],
+                       bounds=[100,6, 112,25],
                        years=slice(2015,2016, None))
 
 cells = gpd.GeoDataFrame({'geometry' : cutout.grid_cells()})
