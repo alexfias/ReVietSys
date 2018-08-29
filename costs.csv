@@ -1,10 +1,12 @@
-carrier,marginal,capital,co2_emissions
-bioenergy,72.9,256.
-hard coal,30.,222.0,427.7
-hydro,5.0,211.2
-ocgt,76.8,63.8,230.0
-nuclear,10.4,455.1
-oil,91.6,255.3,405.0
-wind,0.015,140.4
-solar,0.01,65.92
-perpetuum,1000000,1000000
+carrier,marginal,capital,co2_emissions,short_name
+bioenergy,72.9,256,0,B
+hard coal,30,222,427.7,C
+hydro,5,211.2,0,H
+ocgt,76.8,63.8,230,G
+nuclear,10.4,455.1,0,N
+oil,91.6,255.3,405,O
+wind,0.015,140.4,0,W
+solar,0.01,65.92,0,S
+perpetuum,1000000,1000000,0,P
+battery,0,192,0,BT
+hydrogen,0,480,0,H2
