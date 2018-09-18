@@ -8,6 +8,8 @@ import powerplantmatching as pm
 import pandas as pd
 from scipy.spatial import KDTree
 
+
+
 n = pypsa.Network('original-model_original-data')
 n.buses['substation_lv'] = True  # assume all buses are substations
 n.lines['type'] = '490-AL1/64-ST1A 380.0'
@@ -195,4 +197,16 @@ n.lines.capital_cost = 0.4*n.lines.length  # Davids assumption
 
 # Fix small values
 n.generators_t.p_max_pu[n.generators_t.p_max_pu <= 1e-6] = 0.0
+
+# Fix pandas 0.23.4 update change, where former 0.0s are now initialised with NaNs
+n.storage_units_t.inflow = n.storage_units_t.inflow.fillna(0.0)
+
 n.export_to_netcdf('vietnam3_storage.nc')
+
+
+# Construct a network with critical lines removed
+n = pypsa.Network('vietnam3_storage.nc')
+
+n.lines = n.lines.drop(labels=['28', '29'])
+
+n.export_to_netcdf('vietnam3_storage_disconnected.nc')

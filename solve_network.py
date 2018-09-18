@@ -11,18 +11,23 @@ import pandas as pd
 import numpy as np
 from build_scenarios import scenario_lopf, get_limits
 
+
+
 model = 'fias-model'
 data = 'era5-data'
 attribute = 'devplan'  # or 'renewable'
 name = 'vietnam'
 fn = 'vietnam3_storage.nc'
-
+storage = True
 
 for year in [2020, 2025, 2030]:
     n = pypsa.Network(fn)
     n.storage_units.p_nom_max = np.Inf
     n.loads_t.p_set = n.loads_t.p_set * get_limits(year)['load_increase']
-    scenario = '{}_{}'.format(attribute, year)
+    if storage == True:
+        scenario = '{}_{}_{}'.format(attribute, year, 'storage')
+    else:
+        scenario = '{}_{}'.format(attribute, year)
     n.lopf(extra_functionality = scenario_lopf(year, attribute=attribute),
            snapshots=n.snapshots[:8760],
            solver_name='gurobi',

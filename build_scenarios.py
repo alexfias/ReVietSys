@@ -12,8 +12,6 @@ import pandas as pd
 
 
 
-
-
 def scenario_constraints(n, snapshots, limits=None, flexibility=0.1,
                          carrier_constraints=None):
 
@@ -46,9 +44,9 @@ def get_limits(year):
     return scenarios.loc[year]
 
 def scenario_lopf(year=2020, attribute='devplan', flexibility=0.1):
-    if attribute == 'devplan':
+    if attribute == 'renewable':
         carrier_constraints = ['hydro', 'nuclear']
-    elif attribute == 'renewable':
+    elif attribute == 'devplan':
         carrier_constraints = ['wind', 'solar', 'hydro', 'bioenergy',
                                'hard coal', 'oil', 'ocgt', 'nuclear']
     else:
@@ -61,5 +59,3 @@ def scenario_lopf(year=2020, attribute='devplan', flexibility=0.1):
                                     flexibility=flexibility,
                                     carrier_constraints=carrier_constraints)
     return set_constraints
-
-
