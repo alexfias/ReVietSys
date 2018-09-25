@@ -1,7 +1,0 @@
-There are essentially four things left to do
-1       Find an appropriate s_nom starting value
-2       Constrain Nuclear Power to a minimal capacity per plant
-3       Implement the global CO2 limit correctly
-4       Estimate an appropriate value for Hydro exppansion in the renewable scenarios
-
-Then different weather datasets can be analysed, each dataset in a single run and one run with all queued
