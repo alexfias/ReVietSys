@@ -27,7 +27,8 @@ n.lopf(extra_functionality = scenario_lopf(year, attribute=attribute, flexibilit
        snapshots=n.snapshots[:8760],
        solver_name='gurobi',
        solver_options={"threads":32, "method":-1, "crossover":-1},
-       formulation='kirchhoff', keep_files=False)
+       formulation='kirchhoff', keep_files=False,
+       solver_logfile=sys.argv[1]+'.log')
 
 n.name = name + '_' + scenario
 n.export_to_csv_folder('/home/vres/data/ReVietSys/' + model + '_' +
