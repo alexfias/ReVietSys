@@ -11,7 +11,7 @@ counter = 0
 
 for f in files:
     counter += 1
-    if (counter == 4) or (counter == 7) or (counter == 10): t.sleep(432000) # five days idle
+    if (counter == 4) or (counter == 7) or (counter == 10): t.sleep(345600) # four days idle
 
     job_name = '--job-name='+f
     partition = '--partition=x-men'
