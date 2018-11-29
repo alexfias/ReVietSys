@@ -1,0 +1,13 @@
+name,marginal,capital,co2_emissions,short_name
+bioenergy,72.9,256000,0.0,B
+hard coal,30.0,222000,427.7,C
+hydro,5.0,211200,0.0,H
+ocgt,76.8,63800,230.0,G
+nuclear,10.4,455100,0.0,N
+oil,91.6,255300,405.0,O
+wind,0.015,140400,0.0,W
+solar,0.01,65920,0.0,S
+perpetuum,1000.0,1000000,0.0,P
+battery,0.0,192000,0.0,BT
+hydrogen,0.0,480000,0.0,H2
+hydro ror,5.0,211200,0.0,R
