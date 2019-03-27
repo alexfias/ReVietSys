@@ -70,4 +70,4 @@ n.lopf(extra_functionality = renewable_set_constraints,
 
 n.name = name + '_' + scenario
 n.export_to_csv_folder('/home/vres/data/ReVietSys/' + model + '_' +
-                   data + '/' + scenario)
+                   data + '_storage/' + scenario)

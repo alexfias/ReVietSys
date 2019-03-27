@@ -57,7 +57,7 @@ else:
 n.lopf(extra_functionality = devplan_set_constraints,
        snapshots=n.snapshots[:8760],
        solver_name='gurobi',
-       solver_options={"threads":32, "method":2, "crossover":0},
+       solver_options={"threads":32, "method":-1, "crossover":-1},
        formulation='kirchhoff', keep_files=False,
        solver_logfile=sys.argv[1]+'.log')
 

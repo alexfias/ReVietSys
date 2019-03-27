@@ -1,0 +1,47 @@
+INFO:pypsa.io:Imported network vietnam3_storage.nc has buses, carriers, generators, lines, loads, storage_units
+INFO:pypsa.pf:Slack bus for sub-network 0 is CongThanh
+INFO:pypsa.opf:Performed preliminary steps
+INFO:pypsa.opf:Building pyomo model using `kirchhoff` formulation
+INFO:pypsa.pf:Tree slack bus is Pleiku with degree 4.
+INFO:pypsa.pf:Slack bus for sub-network 0 is CongThanh
+INFO:pypsa.pf:Slack bus for sub-network 0 is CongThanh
+INFO:pypsa.opf:Solving model using gurobi
+INFO:pypsa.opf:Optimization successful
+WARNING:pypsa.io:Directory /home/vres/data/ReVietSys/fias-model_era5-data_storage/devplan_2030_storage does not exist, creating it
+INFO:pypsa.io:Exported network devplan_2030_storage has carriers, buses, storage_units, lines, generators, loads
+# ==========================================================
+# = Solver Results                                         =
+# ==========================================================
+# ----------------------------------------------------------
+#   Problem Information
+# ----------------------------------------------------------
+Problem: 
+- Name: x8226258_copy
+  Lower bound: 26987890.1538
+  Upper bound: 26987890.1538
+  Number of objectives: 1
+  Number of constraints: 13805779
+  Number of variables: 8226258
+  Number of binary variables: 0
+  Number of integer variables: 0
+  Number of continuous variables: 8226258
+  Number of nonzeros: 32677001
+  Sense: minimize
+# ----------------------------------------------------------
+#   Solver Information
+# ----------------------------------------------------------
+Solver: 
+- Status: ok
+  Return code: 0
+  Message: Model was solved to optimality (subject to tolerances), and an optimal solution is available.
+  Termination condition: optimal
+  Termination message: Model was solved to optimality (subject to tolerances), and an optimal solution is available.
+  Wall time: 223375.120957
+  Error rc: 0
+  Time: 223493.73732495308
+# ----------------------------------------------------------
+#   Solution Information
+# ----------------------------------------------------------
+Solution: 
+- number of solutions: 0
+  number of solutions displayed: 0

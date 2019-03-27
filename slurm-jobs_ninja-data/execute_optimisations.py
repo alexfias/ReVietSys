@@ -8,6 +8,8 @@ files.sort()
 files.remove('execute_optimisations.py')
 files.remove('slurm_batches.py')
 files.remove('build_scenarios.py')
+files.remove('PHS')
+files.remove('NO-PHS')
 
 #counter = 0
 
